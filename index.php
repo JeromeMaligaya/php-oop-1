@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . ("/classes/Movie.php");
 
+$titanic = new Movie("Titanic", "Drama", "English", 9, 1997);
+$oppenheimer = new Movie("Oppenheimer", "historical drama", "English", 8, 2023);
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +26,16 @@ require_once __DIR__ . ("/classes/Movie.php");
             <div class="row">
                 <div class="col-12">
                     <h1 class="fw-bolder text-center py-3">php-oop-1</h1>
+                </div>
+                <div class="col-12">
+                    <main>
+                        <p>
+                            <?= $titanic->getInfoMovie() ?>
+                        </p>
+                        <p>
+                            <?= $oppenheimer->getInfoMovie() ?>
+                        </p>
+                    </main>
                 </div>
             </div>
         </div>
